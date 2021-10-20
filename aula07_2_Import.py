@@ -1,8 +1,8 @@
-import metFuncClasses
+import aula07_1_MetFuncClasses
 # from metFuncClasses import Calculadora
 
 
-calc = metFuncClasses.Calculadora
+calc = aula07_1_MetFuncClasses.Calculadora
 print(calc.divis(10,5/2))
 
 # import metFuncClasses

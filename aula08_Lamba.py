@@ -21,6 +21,7 @@ subtracao = lambda a,b:a-b
 
 print(soma(10,15))
 
+#FUNÇÃO ANONIMA
 calculadora = {
     'soma':lambda a,b:a+b,
     'sub':lambda a,b:a-b,
