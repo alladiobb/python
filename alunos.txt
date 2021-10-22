@@ -1,3 +1,3 @@
-Alladio, 10,9,10,9
-Valentim, 9,9,9,9
-Octavio, 8,8,8,8
+Alladio,10,9,10,9
+Valentim,9,9,9,9
+Octavio,8,8,8,8

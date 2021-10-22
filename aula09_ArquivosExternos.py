@@ -20,24 +20,36 @@ def lerArquivo(caminhoArquivo):
     # print(texto)
 
 def mediaNotas(caminhoArquivo):
-    arquivo = open(caminhoArquivo)
+    arquivo = open(caminhoArquivo,'r')
     alunoNota = arquivo.read()
     # print(alunoNota)
+    alunoNotaSplitado = alunoNota.split('\n')
+    # print(alunoNotaSplit)
+    listaMedia=[]
+    for x in alunoNotaSplitado:
+        listaNotas = x.split(',')
+        aluno =listaNotas[0]
+        listaNotas.pop(0)
+        # print(aluno)
+        # print(listaNotas)
+        #Função Lambda para fazer a média das notas
+        media = lambda notas: sum([int(i) for i in notas])/4
+        print(media(listaNotas))
+        listaMedia.append({aluno:media(listaNotas)})
+    return listaMedia
 
-    alunoNotaSplit = alunoNota.split('\n')
-    # print(alunoNota)
-    for x in alunoNota:
-        alunoNotaSplit2 = x.split(',')
-        # aluno =x[0]
-        print(alunoNotaSplit2)
+#Copiar arquivo
+def copiaArquivo(caminhoArquivo):
+    import shutil
+
 
 if __name__ == '__main__':
     caminhoArquivo=caminho
-    # escreverArquivo('Primeira Escrita\n')
-    # adicionarArquivo('Segunda Escrita\n')
-    # adicionarArquivo('Quarta Escrita\n')
-    # escreverArquivo('Alladio, 10,9,10,9\n',caminhoArquivo)
-    # adicionarArquivo('Valentim, 9,9,9,9\n',caminhoArquivo)
-    # adicionarArquivo('Octavio, 8,8,8,8\n',caminhoArquivo)
+
+    # escreverArquivo('Alladio,10,9,10,9\n',caminhoArquivo)
+    # adicionarArquivo('Valentim,9,9,9,9\n',caminhoArquivo)
+    # adicionarArquivo('Octavio,8,8,8,8\n',caminhoArquivo)
     # lerArquivo(caminhoArquivo)
-    mediaNotas(caminhoArquivo)
+
+    listaMedia=mediaNotas(caminhoArquivo)
+    print(listaMedia)
