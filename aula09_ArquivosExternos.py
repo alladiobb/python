@@ -26,22 +26,30 @@ def mediaNotas(caminhoArquivo):
     alunoNotaSplitado = alunoNota.split('\n')
     # print(alunoNotaSplit)
     listaMedia=[]
+
+    # Função Lambda para fazer a média das notas
+    media = lambda notas: sum([int(i) for i in notas]) / 4
+
     for x in alunoNotaSplitado:
+
         listaNotas = x.split(',')
         aluno =listaNotas[0]
         listaNotas.pop(0)
         # print(aluno)
         # print(listaNotas)
-        #Função Lambda para fazer a média das notas
-        media = lambda notas: sum([int(i) for i in notas])/4
-        print(media(listaNotas))
+        # print(media(listaNotas))
         listaMedia.append({aluno:media(listaNotas)})
     return listaMedia
 
 #Copiar arquivo
-def copiaArquivo(caminhoArquivo):
+def copiaArquivo(caminhoArquivoBase,caminhoCopia):
     import shutil
+    shutil.copy(caminhoArquivoBase,caminhoCopia)
 
+#Mover arquivo
+def moveArquivo(caminhoArquivoBase,caminhoNovo):
+    import shutil
+    shutil.move(caminhoArquivoBase,caminhoNovo)
 
 if __name__ == '__main__':
     caminhoArquivo=caminho
@@ -51,5 +59,8 @@ if __name__ == '__main__':
     # adicionarArquivo('Octavio,8,8,8,8\n',caminhoArquivo)
     # lerArquivo(caminhoArquivo)
 
-    listaMedia=mediaNotas(caminhoArquivo)
-    print(listaMedia)
+    # listaMedia=mediaNotas(caminhoArquivo)
+    # print(listaMedia)
+
+    # copiaArquivo(caminhoArquivo,'E:/')
+    moveArquivo(caminhoArquivo,'E:/teste/')
