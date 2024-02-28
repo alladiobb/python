@@ -1,5 +1,4 @@
-#Lista
-
+#LISTA
 #Criando, Adicionando, Imprimindo
 lista = []
 lista.append(1)
