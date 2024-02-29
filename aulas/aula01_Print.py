@@ -6,7 +6,7 @@ subtracao=a-b
 
 resultado = ('Soma:{soma}'
       '\nSubtracao:{subtracao}'.format(soma=soma,subtracao=subtracao))
-print(resultado)
+print(f"O resultado é: {resultado}")
 
 
 # print('soma:{}'.format(soma))
