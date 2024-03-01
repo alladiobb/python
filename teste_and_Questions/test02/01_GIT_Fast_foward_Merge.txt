@@ -1,15 +1,16 @@
 What happens in a fast-forward merge?
 Take into account that in Git the tip of a branch is the last commit of the branch.
 
+- Scenario: Imagine you have a branch master and another branch called feature. The feature branch contains new commits that you want to integrate into master.
+- Fast-forward merge: When you perform a fast-forward merge, Git simply moves the pointer of the master branch to the tip of the feature branch. This is because the entire history of the master branch is already contained within the feature branch.
+- Benefits: Fast-forward merges are efficient and keep your Git history linear. They are also the default merge strategy in Git.
+- Drawback: Fast-forward merges cannot be used if there have been commits to the master branch since the feature branch was forked. In this case, a regular merge is required.
 
 
 O que acontece em um fast-foward merge?
-
 Git faz com que a ponta do branch atual aponte para a ponta do branch de destino
 
-testes
-
-testes_02
-testes_03
-testes_04
-testes_05
+- Cenário: Imagine que você tem uma branch chamada master e outra chamada feature. A branch feature contém novos commits que você deseja integrar na master.
+- Mesclagem fast-forward: Quando você executa uma mesclagem fast-forward, o Git simplesmente move o ponteiro da branch master para a ponta da branch feature. Isso ocorre porque todo o histórico da branch master já está contido na branch feature.
+- Vantagens: As mesclagens fast-forward são eficientes e mantêm o histórico do seu Git linear. Elas também são a estratégia de mesclagem padrão no Git.
+- Desvantagem: As mesclagens fast-forward não podem ser usadas se houver commits na branch master desde que a branch feature foi criada. Nesse caso, é necessária uma mesclagem normal.
