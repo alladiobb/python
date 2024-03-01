@@ -8,3 +8,4 @@ O que acontece em um fast-foward merge?
 Git faz com que a ponta do branch atual aponte para a ponta do branch de destino
 
 testes
+testes_02
