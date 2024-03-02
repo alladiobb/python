@@ -1,0 +1,19 @@
+You have two files: doc.txt and data.json. The git status
+command shows that the two files are untracked and you realize
+that you don't need them. Which command will remove the two files
+from the current directory?
+
+R: git clean -f
+
+The difference between git clean and git rm lies in their purpose and usage:
+
+    git clean: This command is used to remove untracked files from the working directory.
+    Untracked files are those that Git is not currently managing.
+    The -f flag is used to force the clean operation, ensuring that untracked files are removed.
+    However, git clean will not remove files that are tracked or have been staged (added to the index) for commit.
+
+    git rm: This command is used to remove files from the Git index and the working directory.
+    It's typically used for files that are already tracked by Git.
+    When you use git rm, you're telling Git to stop tracking the specified file and also remove it from the working directory.
+    If you want to remove a file from both the index and the working directory, you would typically use git rm.
+    Additionally, git rm can be used with various flags and options to handle different scenarios, such as removing files recursively or forcefully.
