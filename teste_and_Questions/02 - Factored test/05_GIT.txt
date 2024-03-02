@@ -1,0 +1,5 @@
+You have two files: doc.txt and data.json.
+The git status command show that the two files are untracked and yo realize that you don't need them.
+Which command will remove the two files are UNTRACKED and you realize that you don't need them.
+Which command will remove the two files from the current directory?
+
