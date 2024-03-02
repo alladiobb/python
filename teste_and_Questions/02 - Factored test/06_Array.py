@@ -6,4 +6,7 @@ array.append(2)
 array.insert(0,9)
 array.insert(2,8)
 
+array2 = [15] + array
+
 print(array)
+print(array2)
