@@ -1,0 +1,8 @@
+04 - What is the purpose of the .gitkeep file?
+R:It is a standardised practice to add a .gitkeep file inside empty folders to keep track of those folders
+
+04 - Qual o propósito do arquivo .gitkeep?
+R:É uma prática padronizada adicionar um arquivo gitkeep dentro das pastas vazias para manter o controle dessas pastas
+
+.gitignore é usado para especificar quais arquivos devem ser ignorados pelo Git.
+.git armazena o histórico de commits do repositório. Este arquivo é necessário para que o Git funcione corretamente.
