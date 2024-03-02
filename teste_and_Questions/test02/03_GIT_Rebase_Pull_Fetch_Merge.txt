@@ -1,0 +1,17 @@
+03 - You need to download new data from a remote repository buy you don't want that new data to be automatically
+merged with your current working files in your local repository. Which command will you use?
+
+R: git fetch
+
+03 - Você precisa baixar novos dados de um repositorio remoto, você não quer que esses novos dados sejam automaticamente
+mesclado com seus arquivos de trabalho atuais em seu repositório local. Qual comando você usará?
+
+R: git fetch
+
+*git rebase -> Reescreve o histórioco do seu repositório local para que pareça que você fez as alterações no repositório remoto.
+Isso pode ser útil se você quiser enviar suas alterações para o repositório remoto, mas não quer que o histórico do seu repositório local pareça confuso.
+
+*git pull é um atalho para git fetch seguido por git merge.
+Ele baixa os dados mais recentes do repositório remoto e os mescla com seus arquivos de trabalho atuais.
+
+*git merge mescla as alterações de um branch no outro.
