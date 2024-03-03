@@ -1,0 +1,10 @@
+Qual das instruções apresentadas é do tipo set?
+
+As opções são:
+
+    {1,2,3,3}
+    set()
+    0
+    set([1,2,3])
+    (1,2,3)
+    {1,2,3}

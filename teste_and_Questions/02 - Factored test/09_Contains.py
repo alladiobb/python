@@ -1,5 +1,5 @@
 #Set
-teste0 = {1,2,3,4,5,"a","b","c"}
+teste0 = {1,2,3,4,5,"a","b","c","c"}
 #Lista
 teste1 = [1,2,3,4,5,"a","b","c"]
 #Dicionário
@@ -8,11 +8,10 @@ teste2 = {
     "b" : 2,
 }
 #Tupla
-teste3 = (1,2,3,4,5)
+teste3 = (1,2,3,4,5,5)
 elemento = 1
 
-print(teste3.__reduce__())
-print(teste3)
+print(teste0)
 
 """
 print(teste0.__contains__(10))
