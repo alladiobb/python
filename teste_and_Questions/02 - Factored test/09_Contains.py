@@ -7,8 +7,14 @@ teste2 = {
     "a" : 1,
     "b" : 2,
 }
-elemento = 'b'
+#Tupla
+teste3 = (1,2,3,4,5)
+elemento = 1
 
+print(teste3.__reduce__())
+print(teste3)
+
+"""
 print(teste0.__contains__(10))
 
 try:
@@ -17,6 +23,7 @@ except ValueError:
     print("Não tem o elemento")
 
 print(teste2.get('a'))
+"""
 
 """
 if elemento in teste0:
