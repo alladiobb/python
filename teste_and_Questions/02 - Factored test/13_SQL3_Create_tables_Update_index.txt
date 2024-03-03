@@ -1,0 +1,11 @@
+A pergunta é: Qual a opção que você escolheria ao criar estas tabelas?
+
+As opções são:
+
+    ON DELETE CASCADE
+    SET NULL
+    NO ACTION
+    ON UPDATE CASCADE
+
+A pergunta está relacionada à criação de duas tabelas que serão unidas por meio de chaves primárias e estrangeiras.
+As tabelas devem ser criadas de modo que a chave estrangeira seja alterada automaticamente sempre que a chave primária for alterada.
